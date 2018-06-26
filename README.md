@@ -66,7 +66,7 @@ You can use skycli to deploy cloud functions on to the Skygear cloud.
       skycli login
       ```
 
-3. Replace <your-app-name> in `skygear.json` with your Skygear app name.
+3. Replace `<your-app-name>` in `skygear.json` with your Skygear app name.
       ```
       {
         "version": 1,

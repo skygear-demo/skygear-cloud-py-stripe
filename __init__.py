@@ -4,12 +4,12 @@ import uuid
 from skygear.container import SkygearContainer
 from skygear.options import options
 
-stripe.api_key = 'sk_test_QRyUugCJEdadMN6kg1wrbPTu'
+stripe.api_key = '<your-stripe-private-key>'
 
 def getSkygearContainer():
     container = SkygearContainer(
         api_key=options.masterkey,
-        user_id='92548a25-d70c-4de9-b5d2-7ebb1d27f1be'
+        user_id='<your-user-id>'
     )
     return container
 

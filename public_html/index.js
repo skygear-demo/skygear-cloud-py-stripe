@@ -1,10 +1,14 @@
+const skygearEndpoint = '<your-skygear-app-endpoint>'
+const skygearApiKey= '<your-skygear-app-api-key>'
+const stripePublishableKey = '<your-stripe-publishable-key>'
+
 skygear.config({
-  endPoint: 'https://tenten.skygeario.com/' ,
-  apiKey: 'e5ceb7ff1b434526b122a71be290ca57'
+  endPoint: skygearEndpoint,
+  apiKey: skygearApiKey
 })
 
 var handler = StripeCheckout.configure({
-  key: 'pk_test_E7uxKdS34vQN2E0AcFzk9ntb',
+  key: stripePublishableKey,
   image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
   locale: 'auto',
   token: function(token) {

@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Skygear + Stripe demo</title>
+    <!--Skygear CDN-->
+    <script src="https://code.skygear.io/js/polyfill/latest/polyfill.min.js"></script>
+    <script src="https://code.skygear.io/js/skygear/latest/skygear.min.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script src="./index.js" type="text/javascript"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        line-height: 30px;
+      }
+      #payment-button{
+        margin-top: 10px
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Welcome to the Skygear Coffee Shop</h2>
+    <p> We offer a wide range of freshly roasted cofee beans.
+      Select the one you wish to buy and check out by pressing the 'Pay with card' button. </p>
+    <form id="order-form">
+      <input type="radio" name="product" data-name="Kenya AA" data-price="1000">Kenya AA, light-medium roast, 200g, USD10<br>
+      <input type="radio" name="product" data-name="Colombia" data-price="1000">Colombia, dark roast, 200g, USD10 <br>
+      <input type="radio" name="product" data-name="Ethiopia" data-price="1000">Ethiopia, light roast, 200g, USD10 <br>
+      <input type="submit" id="payment-button" value="Pay with card">
+    </form>
+  </body>
+</html>

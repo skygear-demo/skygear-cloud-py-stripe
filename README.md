@@ -79,7 +79,7 @@ You can use skycli to deploy cloud functions on to the Skygear cloud.
       skycli deploy
       ```
 
-5. Go to [https://<your-app-name>.skygeario.com/static/index.html](https://<your-app-name>.skygeario.com/static/index.html) to test the application. Enjoy!
+5. Go to `https://<your-app-name>.skygeario.com/static/index.html` to test the application. Enjoy!
 
 # Support
 For bug report, please create an issue. For support and questions, please reach us at the [Skygear community](https://discuss.skygear.io).

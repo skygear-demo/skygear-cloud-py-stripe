@@ -40,7 +40,7 @@ function getSelectedProduct() {
   return product
 }
 
-document.getElementById('order-form').addEventListener('submit', async function(e) {
+function submitForm() {
   // Open Checkout with further options:
   let product = getSelectedProduct()
   let productName = product.name
@@ -52,8 +52,8 @@ document.getElementById('order-form').addEventListener('submit', async function(
     currency: 'usd',
     amount: productPrice
   });
-  e.preventDefault();
-});
+  return false;
+}
 
 // Close Checkout on page navigation:
 window.addEventListener('popstate', function() {

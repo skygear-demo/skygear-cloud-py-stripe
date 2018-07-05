@@ -13,7 +13,7 @@ Checkout the tutorial of this demo here: (Coming soon)
 1. Clone this project to your machine.
 
       ```
-      git clone git@github.com:skygear-demo/skygear-cloud-py-stripe.git
+      git clone https://github.com/skygear-demo/skygear-cloud-py-stripe.git
       ```
 
 2. Get a Skygear account at https://skygear.io/signup. Then update `skygearEndpoint` and `skygearApiKey` in `public_html/index.js` with the endpoint and api key you get from the Developer Portal after signing up.

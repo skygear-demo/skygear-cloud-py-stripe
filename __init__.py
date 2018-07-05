@@ -19,7 +19,7 @@ def process_payment(product_name, product_price, stripe_token, user_email):
         charge = stripe.Charge.create(
             amount = product_price,
             currency = 'usd',
-            description = f'Charging { product_price / 100 } USD for { product_name }',
+            description = 'Charging { product_price / 100 } USD for { product_name }',
             receipt_email = user_email,
             source = stripe_token,
             metadata = {
